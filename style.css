@@ -902,6 +902,12 @@ color: #f21c87;
         }
     }
     @media(max-width:380px){
+        .logo{
+            max-height:10vw;
+        }
+        .navbar-small-button{
+            font-size: 5vw;
+        }
         .title{
             font-size:8.5vw;
             line-height:2.5rem;
@@ -970,6 +976,17 @@ color: #f21c87;
             margin-top: 0.5rem;
         }
     }
+    @media(max-width:320px){
+        .footer-button button{
+            width:11rem;
+
+        }
+        .footer-button input{
+            width:10rem;
+          
+        }
+        
+    }
     @media(max-width:300px){
         .content-text{
             margin-top: 2rem;
@@ -992,7 +1009,11 @@ color: #f21c87;
         }
     }
     @media(max-width:250px){
-        
+        .footer-titles h1{
+            font-size:1.7rem;
+        }
+        .footer-titles h2{
+            font-size:1.3rem;
+        }
     }
 }
-
