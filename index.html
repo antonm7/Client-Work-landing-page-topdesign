@@ -81,7 +81,7 @@
                     <div class="column secondColumn">
                             <img src="/img/second_column.png" alt="">
                             <div class="column_title">
-                                Influence content with EOS tokens
+                                Influence content with<br> EOS tokens
                             </div>
                             <div class="column_para">
                                     Be rewarded for spotting great content. The more tokens you use to influence, the more likely you will earn tokens from future influencers
@@ -103,7 +103,7 @@
     <div class="reward-system-wrapper"> 
         <div class="reward-system">
                 <div class="features-title">
-                        <div class="special-border-2"></div>
+                        <div class="special-border-2 red-bar"></div>
                         <h1 class="features-first-title">Reward System</h1>
                 </div>
                  <div class="main-images">
@@ -134,7 +134,7 @@
                 <div class="right-column">
                         <div class="firstQ">
                                 <h1>Do I need EOS tokens to participate?</h1><br>
-                                <h2>It is free to participate as an author. However, if you’re an influencer, you need EOS tokens to send to reward authors and previous influencers.</h2>
+                                <h2 class="padding-top">It is free to participate as an author. However, if you’re an influencer, you need EOS tokens to send to reward authors and previous influencers.</h2>
                             </div>
                             <div class="firstQ">
                                     <h1>Do I need EOS tokens to participate?</h1><br>
@@ -171,12 +171,14 @@
     const img = document.querySelector('.dsd')
     const button = document.querySelector('.navbar-small-button');
     const navbar = document.querySelector('.small-navbar');
+    const header = document.querySelector('.header_wrap')
     button.addEventListener("click",()=>{
         navbar.classList.toggle('in')
     })
     function checkRes(x){
         if(x.matches){
-            img.src = "/img/smallBg2.png"
+            img.src = "/img/smallBg2.png"   
+            // header.style.backgroundImage = "url('/img/smallHeader.png')";
         }
         else{
             img.src = "/img/bg2.png"
@@ -184,7 +186,7 @@
     }
     var x = window.matchMedia("(max-width:690px)")
     checkRes(x)
-    x.addEventListener("",checkRes)
+    x.addEventListener("change",checkRes)
 </script>
 </body>
 </html>
