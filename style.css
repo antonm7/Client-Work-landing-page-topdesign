@@ -25,10 +25,10 @@ header{
     padding: 0rem 5%;
 }
 .logo{
-    max-width:16rem;
+    max-width:190px;
     width: 100%;
-    height: auto ;
-   padding-top: 3%;
+    height:70px;
+   padding-top: 3.5%;
 }
 .navbar{
     display: -webkit-box;
@@ -165,6 +165,17 @@ h1,h2,h3,h4{
     padding: 023% 15%;
     padding-bottom: 0;
 }
+.contentBG{
+    position: absolute;
+    height:24%;
+    background-size:100%;
+    background-position:top;
+    width:100%;
+    z-index: -1;
+    background-image: url('/img/bigB.png');
+    background-size: 70%;
+
+}
 .example{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -175,7 +186,7 @@ h1,h2,h3,h4{
     color:#09a2c6;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    max-width:40%;
+    max-width:52%;
     line-height: 2.5rem;
 }
 .sec-content{
@@ -184,7 +195,7 @@ h1,h2,h3,h4{
     font-family: 'Open Sans', sans-serif;
     margin-top: 3%;
     color: #606060;
-    max-width:38%;
+    max-width:50%;
     padding-left: 2vw;
     border-left:6px solid #e0e0e0;
 }
@@ -200,8 +211,17 @@ h1,h2,h3,h4{
         -ms-flex-pack: center;
             justify-content: center;
 }
+.featuresBg{
+    margin-top: 20rem;
+    z-index: -2;
+    width:100%;
+    height:50%;
+    position: absolute;
+    border-top: 100px solid blue;
+    border-right: 50px solid red;
+}
 .features{
-    background-color: white;
+    background-color: #fcfdfc;
     max-width:70%;
     width:100%;
     min-height:50vh;
@@ -220,7 +240,7 @@ h1,h2,h3,h4{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     color:#777777;
-    font-size:32pt;
+    font-size:20pt;
 }
 .columns-wrapper{
     display: -webkit-box;
@@ -340,7 +360,7 @@ height: auto;
     background-image: url('/img/line-bg.png');
     background-repeat: no-repeat;
     background-size:cover;
-    padding:15rem 20rem;
+    padding:15rem 12rem;
     padding-bottom: 5rem;
     margin-top:-5rem;
 }
@@ -364,12 +384,12 @@ height: auto;
 .firstQ h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size:1.4rem;
+    font-size:1.2rem;
     color:#4d4d4d;
 }
 .firstQ h2{
     font-family: 'Open Sans', sans-serif;
-    font-size:1rem;
+    font-size:0.9rem;
     color:#747474; 
 }
 .right-column{
@@ -488,9 +508,7 @@ height: auto;
 
 
 @media(max-width:1650px){
-    .title{
-        width:100%;
-    } 
+    
 }
 @media(max-width:1585px){
     /* .illustration{
@@ -599,6 +617,12 @@ height: auto;
 }
 
 @media(max-width:920px){
+    .logo{
+        max-width:150px;
+        width: 100%;
+        height:60px;
+       padding-top: 3.5%;
+    }
     .email_text{
         height:1.5rem; 
         width:50%;
@@ -688,11 +712,12 @@ height: auto;
     }
 }
 @media(max-width:690px){
-    .logo{
-        max-width:11rem;
-        width: 100%;
-        height:80%;
-    }
+        .logo{
+            max-width:160px;
+            width: 100%;
+            height:60px;
+           padding-top: 3.5%;
+        }
         .header_wrap{
             background-image: url('/img/smallHeader.png');
             background-repeat:no-repeat;
@@ -821,9 +846,9 @@ height: auto;
             box-shadow:none;
     padding: 5% 3%;
 }
-    .features-first-title{
+    /* .features-first-title{
     font-size:3rem;
-    }
+    } */
     .columns-wrapper{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -901,15 +926,6 @@ height: auto;
         color:#6b8b9f;
         font-size:0.7rem;
     }
-    }
-    @media(max-width:540px){
-        .content-text{
-            font-size:2.4rem;
-        }
-        .sec-content{
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
     }
     @media(max-width:435px){
         .features-wrap{
@@ -1062,9 +1078,9 @@ height: auto;
             width:10rem;
           
         }
-        .features-first-title{
+        /* .features-first-title{
             font-size:1.7rem;
-        }
+        } */
         
     }
     @media(max-width:280px){
